@@ -1,0 +1,33 @@
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+}
+.title {
+    font-size: 24px !important;
+    line-height: 30px;
+    font-family: "Nunito", Sans-serif !important;
+    text-align: left;
+    margin: 0  auto;
+    font-weight: 600;
+}
+.display_none {
+    display:none !important;
+}
+@media (max-width: 650px) {
+    .title {
+        font-size: 20px !important;
+    line-height: 25px;
+    }
+    .container {
+        margin: 0 10%;
+    }
+}
+@media (min-width: 650px) and (max-width: 1000px) {
+    .title {
+        font-size: 20px !important;
+    line-height: 25px;
+    }
+    .container {
+        margin: 0 6%;
+    }
+}
