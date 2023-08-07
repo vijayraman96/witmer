@@ -3,12 +3,12 @@
     margin: 0 auto;
 }
 .title {
-    font-size: 24px !important;
-    line-height: 30px;
+    font-size: 23px !important;
+    line-height: 28px;
     font-family: "Nunito", Sans-serif !important;
     text-align: left;
     margin: 0  auto;
-    font-weight: 600;
+    font-weight: 500;
 }
 .display_none {
     display:none !important;

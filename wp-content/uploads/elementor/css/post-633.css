@@ -3,7 +3,7 @@
 }
 .elementor-633 .elementor-element.elementor-element-263930c:not(.elementor-motion-effects-element-type-background),  .elementor-633 .elementor-element.elementor-element-263930c > .elementor-motion-effects-container > .elementor-motion-effects-layer {
     background-image: url("/wp-content/uploads/2020/12/Contact_Us_Option-1.jpg");
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
