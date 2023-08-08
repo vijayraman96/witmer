@@ -774,7 +774,7 @@ body.rtl .elementor-16 .elementor-element.elementor-element-7e7976a {
 }
 @media(max-width:767px) {
     .elementor-16 .elementor-element.elementor-element-2c89cd8 > .elementor-container {
-    min-height: 70vh;
+    min-height: 50vh;
 }
 .elementor-16 .elementor-element.elementor-element-2c89cd8:not(.elementor-motion-effects-element-type-background),  .elementor-16 .elementor-element.elementor-element-2c89cd8 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
     background-image: url("/wp-content/uploads/2020/12/Home_Banner-2.jpg");
