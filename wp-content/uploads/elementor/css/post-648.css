@@ -709,4 +709,11 @@
 /* Start custom CSS for column,  class: .elementor-element-f86afbc */.elementor-648 .elementor-element.elementor-element-f86afbc  {
      height:  300px;
  }
+ @media(max-width: 767px) {
+    .elementor-648 .elementor-element.elementor-element-02ba783:not(.elementor-motion-effects-element-type-background),  .elementor-648 .elementor-element.elementor-element-02ba783 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+        background-image: url("/wp-content/uploads/2020/12/about_hero_1-scaled.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+ }
 /* End custom CSS */

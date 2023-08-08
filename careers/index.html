@@ -374,7 +374,23 @@ input:focus, textarea:focus, select:focus{
 .tooltip-right:after {
   margin-left: 0;
   margin-bottom: -16px;
-}		</style>
+}	
+@media(max-width: 765px) {
+	.grid-gap{
+		grid-gap: 0
+	}
+}
+@media(min-width: 765px) and (max-width: 1100px) {
+	.grid-gap{
+		grid-gap: 0
+	}
+}
+@media(min-width: 1101px){
+	.grid-gap{
+		grid-gap: 30px
+	}
+}
+</style>
 		</head>
 <body class="page-template page-template-elementor_header_footer page page-id-457 custom-background wp-custom-logo wp-embed-responsive singular has-post-thumbnail has-no-pagination not-showing-comments show-avatars elementor_header_footer footer-top-visible reduced-spacing elementor-default elementor-template-full-width elementor-kit-7 elementor-page elementor-page-457">
 
@@ -454,7 +470,7 @@ input:focus, textarea:focus, select:focus{
 		</section>
 				<section class="elementor-section elementor-top-section elementor-element elementor-element-967af47 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="967af47" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-default">
-							<div class="elementor-row" style="grid-gap: 30px;">
+							<div class="elementor-row grid-gap" >
 					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-b330e9b" data-id="b330e9b" data-element_type="column">
 			<div class="elementor-column-wrap elementor-element-populated">
 							<div class="elementor-widget-wrap" style="align-items: center; align-content: center;">
