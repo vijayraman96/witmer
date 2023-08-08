@@ -405,7 +405,6 @@ body .elementor-355 .elementor-element.elementor-element-28db57f .elementor-labe
     margin-top: -98px;
     margin-bottom: 0px;
     padding: 188px 0px 70px 0px;
-    background-position: unset !important;
 }
 .elementor-355 .elementor-element.elementor-element-b64ad45 > .elementor-element-populated {
     margin: 0px 0px 0px 0px;
@@ -606,7 +605,7 @@ body .elementor-355 .elementor-element.elementor-element-28db57f .elementor-labe
      font-size:  95%;
      line-height:  1em;
  }
- @media(min-width: 769px) and (max-width: 1024px) {
+ @media(min-width: 701px) and (max-width: 1024px) {
     .elementor-355 .elementor-element.elementor-element-add048e > .elementor-widget-container {
         margin: 0px 0px 15px 0px;
         padding: 0% 0% 0% 0%;
@@ -615,16 +614,27 @@ body .elementor-355 .elementor-element.elementor-element-28db57f .elementor-labe
         margin-top: -98px;
         margin-bottom: 0px;
         padding: 188px 0px 70px 0px;
-        background-position: unset !important;
+        height: 500px;
+        background-position: -140px 7px !important;
+        height: 500px;
+    }
+    .elementor-355 .elementor-element.elementor-element-cd03624 .elementor-heading-title {
+        width: 350px;
     }
  }
- @media(max-width: 768px) {
+ @media(max-width: 700px) {
     .elementor-355 .elementor-element.elementor-element-e5ed764 {
         margin-top: -98px;
         margin-bottom: 0px;
         padding: 188px 0px 70px 0px;
-        background-position: -180px 27px !important;
+        background-position: 0px 27px !important;
         height: 400px !important;
+    }
+    .elementor-355 .elementor-element.elementor-element-e5ed764:not(.elementor-motion-effects-element-type-background),  .elementor-355 .elementor-element.elementor-element-e5ed764 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+        background-image: url("/wp-content/uploads/2020/12/solutions_hero_1_m-300x295.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
  }
 /* End custom CSS */

@@ -703,7 +703,7 @@ body .elementor-16 .elementor-element.elementor-element-0be3d98 .elementor-label
 }
 @media(max-width:1024px) {
     .elementor-16 .elementor-element.elementor-element-2c89cd8 > .elementor-container {
-    min-height: 70vh;
+    min-height: 45vh;
 }
 .elementor-16 .elementor-element.elementor-element-2c89cd8:not(.elementor-motion-effects-element-type-background),  .elementor-16 .elementor-element.elementor-element-2c89cd8 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
     background-image: url("/wp-content/uploads/2020/12/Home_Banner-2.jpg");
@@ -1104,6 +1104,10 @@ body.rtl .elementor-16 .elementor-element.elementor-element-7e7976a {
         margin-left: 200px;
         margin-top: 0px;
     }
+    .elementor-16 .elementor-element.elementor-element-885c819 > .elementor-element-populated {
+        margin: 120px 0px 0px 0px;
+        padding: 32px 32px 200px 32px;
+    }
 }
 @media(max-width: 600px) {
     .elementor-16 .elementor-element.elementor-element-7e7976a img {
@@ -1111,4 +1115,5 @@ body.rtl .elementor-16 .elementor-element.elementor-element-7e7976a {
         margin-left: 60px;
         margin-top: 60px;
     }
+    
 }
