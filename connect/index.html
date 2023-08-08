@@ -1369,12 +1369,29 @@
         .widthG {
           width: 88vw;
         }
+		.ipadFixed {
+			position:fixed;
+			background-color: #fff;
+			width:100%;
+		}
       }
       @media (min-width: 651px) and (max-width: 1100px) {
         .widthG {
           width: 95vw;
         }
+		.ipadFixed {
+			position:fixed;
+			background-color: #fff;
+			width:100%;
+		}
       }
+	  @media(min-width: 1101px) {
+		.ipadFixed {
+			position:static;
+			background-color: transparent;
+			
+		}
+	  }
     </style>
   </head>
   <body
@@ -1625,6 +1642,7 @@
             class="elementor-section elementor-top-section elementor-element elementor-element-5a76962 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
             data-id="5a76962"
             data-element_type="section"
+			id="fixedH"
           >
             <div class="elementor-container elementor-column-gap-default">
               <div class="elementor-row">
@@ -1670,14 +1688,11 @@
                         data-id="e669bbe"
                         data-element_type="widget"
                         data-settings='{"step_next_label":"Next","step_previous_label":"Previous","button_width":"100","step_type":"number_text","step_icon_shape":"circle"}'
-                        data-widget_type="form.default"
                       >
                         <div class="elementor-widget-container">
                           <form
                             class="elementor-form"
-                            method="post"
-                            id="witmer_contact_form"
-                            name="Contact"
+                           
                           >
                             <input
                               type="hidden"
@@ -1777,7 +1792,7 @@
                                 *Required Fields
                               </div>
                               <div
-                                class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons"
+                                class="elementor-field-group elementor-column  elementor-col-100"
                               >
                                 <button
                                   type="submit"
@@ -2282,219 +2297,7 @@
       src="/wp-content/plugins/infinite-scroll-elementor-2.3.2/assets/js/infinite-scroll.pkgd.min.js?ver=6.2"
       id="infinite-scroll-js-js"
     ></script>
-    <script
-      src="/wp-content/plugins/dynamicconditions/Public/js/dynamic-conditions-public.js?ver=1.5.1"
-      id="dynamic-conditions-js"
-    ></script>
-    <script
-      src="/wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.min.js?ver=1.0.1"
-      id="smartmenus-js"
-    ></script>
-    <script
-      src="/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.4.1"
-      id="elementor-pro-webpack-runtime-js"
-    ></script>
-    <script
-      src="/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.4.4"
-      id="elementor-webpack-runtime-js"
-    ></script>
-    <script
-      src="/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.4.4"
-      id="elementor-frontend-modules-js"
-    ></script>
-    <!-- <script id="elementor-pro-frontend-js-before">
-      var ElementorProFrontendConfig = {
-        ajaxurl: "",
-        nonce: "3efd51d97a",
-        urls: {
-          assets: "",
-          rest: "",
-        },
-        i18n: { toc_no_headings_found: "No headings were found on this page." },
-        shareButtonsNetworks: {
-          facebook: { title: "Facebook", has_counter: true },
-          twitter: { title: "Twitter" },
-          google: { title: "Google+", has_counter: true },
-          linkedin: { title: "LinkedIn", has_counter: true },
-          pinterest: { title: "Pinterest", has_counter: true },
-          reddit: { title: "Reddit", has_counter: true },
-          vk: { title: "VK", has_counter: true },
-          odnoklassniki: { title: "OK", has_counter: true },
-          tumblr: { title: "Tumblr" },
-          digg: { title: "Digg" },
-          skype: { title: "Skype" },
-          stumbleupon: { title: "StumbleUpon", has_counter: true },
-          mix: { title: "Mix" },
-          telegram: { title: "Telegram" },
-          pocket: { title: "Pocket", has_counter: true },
-          xing: { title: "XING", has_counter: true },
-          whatsapp: { title: "WhatsApp" },
-          email: { title: "Email" },
-          print: { title: "Print" },
-        },
-        facebook_sdk: { lang: "en_US", app_id: "" },
-        lottie: {
-          defaultAnimationUrl:
-            "\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json",
-        },
-      };
-    </script> -->
-    <script
-      src="/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.4.1"
-      id="elementor-pro-frontend-js"
-    ></script>
-    <script
-      src="/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2"
-      id="elementor-waypoints-js"
-    ></script>
-    <script
-      src="/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2"
-      id="jquery-ui-core-js"
-    ></script>
-    <script
-      src="/wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js?ver=5.3.6"
-      id="swiper-js"
-    ></script>
-    <script
-      src="/wp-content/plugins/elementor/assets/lib/share-link/share-link.min.js?ver=3.4.4"
-      id="share-link-js"
-    ></script>
-    <script
-      src="/wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js?ver=4.8.1"
-      id="elementor-dialog-js"
-    ></script>
-    <script id="elementor-frontend-js-before">
-      var elementorFrontendConfig = {
-        environmentMode: {
-          edit: false,
-          wpPreview: false,
-          isScriptDebug: false,
-        },
-        i18n: {
-          shareOnFacebook: "Share on Facebook",
-          shareOnTwitter: "Share on Twitter",
-          pinIt: "Pin it",
-          download: "Download",
-          downloadImage: "Download image",
-          fullscreen: "Fullscreen",
-          zoom: "Zoom",
-          share: "Share",
-          playVideo: "Play Video",
-          previous: "Previous",
-          next: "Next",
-          close: "Close",
-        },
-        is_rtl: false,
-        breakpoints: { xs: 0, sm: 480, md: 768, lg: 1025, xl: 1440, xxl: 1600 },
-        responsive: {
-          breakpoints: {
-            mobile: {
-              label: "Mobile",
-              value: 767,
-              default_value: 767,
-              direction: "max",
-              is_enabled: true,
-            },
-            mobile_extra: {
-              label: "Mobile Extra",
-              value: 880,
-              default_value: 880,
-              direction: "max",
-              is_enabled: false,
-            },
-            tablet: {
-              label: "Tablet",
-              value: 1024,
-              default_value: 1024,
-              direction: "max",
-              is_enabled: true,
-            },
-            tablet_extra: {
-              label: "Tablet Extra",
-              value: 1200,
-              default_value: 1200,
-              direction: "max",
-              is_enabled: false,
-            },
-            laptop: {
-              label: "Laptop",
-              value: 1366,
-              default_value: 1366,
-              direction: "max",
-              is_enabled: false,
-            },
-            widescreen: {
-              label: "Widescreen",
-              value: 2400,
-              default_value: 2400,
-              direction: "min",
-              is_enabled: false,
-            },
-          },
-        },
-        version: "3.4.4",
-        is_static: false,
-        experimentalFeatures: {
-          e_import_export: true,
-          "landing-pages": true,
-          "elements-color-picker": true,
-          "admin-top-bar": true,
-          "form-submissions": true,
-        },
-        urls: { assets: "\/wp-content\/plugins\/elementor\/assets\/" },
-        settings: { page: [], editorPreferences: [] },
-        kit: {
-          active_breakpoints: ["viewport_mobile", "viewport_tablet"],
-          global_image_lightbox: "yes",
-          lightbox_enable_counter: "yes",
-          lightbox_enable_fullscreen: "yes",
-          lightbox_enable_zoom: "yes",
-          lightbox_enable_share: "yes",
-          lightbox_title_src: "title",
-          lightbox_description_src: "description",
-        },
-        post: {
-          id: 633,
-          title: "Connect%20%E2%80%93%20Witmer",
-          excerpt: "",
-          featuredImage: "\/wp-content\/uploads\/2020\/12\/connect__1_m.jpg",
-        },
-      };
-    </script>
-    <script
-      src="/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.4.4"
-      id="elementor-frontend-js"
-    ></script>
-    <script
-      src="/wp-content/plugins/elementor-pro/assets/js/preloaded-elements-handlers.min.js?ver=3.4.1"
-      id="pro-preloaded-elements-handlers-js"
-    ></script>
-    <script
-      src="/wp-content/plugins/elementor/assets/js/preloaded-modules.min.js?ver=3.4.4"
-      id="preloaded-modules-js"
-    ></script>
-    <script
-      src="/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js?ver=3.4.1"
-      id="e-sticky-js"
-    ></script>
-    <script>
-      /(trident|msie)/i.test(navigator.userAgent) &&
-        document.getElementById &&
-        window.addEventListener &&
-        window.addEventListener(
-          "hashchange",
-          function () {
-            var t,
-              e = location.hash.substring(1);
-            /^[A-z0-9_-]+$/.test(e) &&
-              (t = document.getElementById(e)) &&
-              (/^(?:a|select|input|button|textarea)$/i.test(t.tagName) ||
-                (t.tabIndex = -1),
-              t.focus());
-          },
-          !1
-        );
-    </script>
+   
 
     <script>
       var first_name = document.querySelector('.contact-first-name')
@@ -2503,7 +2306,9 @@
       var email_address = document.querySelector('.contact-email-address')
       var textarea = document.querySelector('.contact-textarea')
       var button = document.querySelector('.contact-submit-button')
-      const submitForm = () => {
+      const submitForm = (e) => {
+
+		e.preventDefault()
       	const fname = first_name.value
       	const lname = last_name.value
       	const company = company_name.value
@@ -2519,13 +2324,14 @@
 			last_name.classList.remove('error')
 			company_name.classList.remove('error')
 			email_address.classList.remove('error')
+			console.log(first_name, last_name)
 			const url = 'https://witmerhealthtechnologies.freshdesk.com/api/v2/tickets';
 			const username = 'ByH2598MYN4vGIdOqUYi';
 			const password = 'x';
 			const data = {
 				"description": "Details about the issue1...",
 				"subject": "From Witmer.ai",
-				"email": "vijayadaran@gmail.com",
+				"email": "santhosh.k@witmer.ai",
 				"status": 2,
 				"priority": 2,
 				"cc_emails": [`${email}`],
@@ -2568,6 +2374,19 @@
 
       Elbutton.addEventListener("click", handleClick);
     </script>
+	<script>
+		const header =  document.querySelector('header')
+		const bodySection = document.querySelector('#fixedH')
+		const toggleFixedHeader = () => {
+			if (window.scrollY >= bodySection.offsetTop - 200) {
+			  header.classList.add('ipadFixed');
+			} else {
+			  header.classList.remove('ipadFixed');
+			}
+		  };
+		  
+		  window.addEventListener('scroll', toggleFixedHeader);
+	</script>
   </body>
 </html>
 <!-- Page supported by LiteSpeed Cache 3.6.4 on 2023-05-15 18:09:08 -->
