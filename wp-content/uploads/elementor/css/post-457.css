@@ -429,9 +429,10 @@
     margin: 0px 32px 0px 32px;
     padding: 0px 0px 0px 0px;
 }
-.elementor-457 .elementor-element.elementor-element-f9093cf .elementor-heading-title {
+.elementor-457 .elementor-element.elementor-element-f9093cf .elementor-heading-title, .elementor-457 .elementor-element.elementor-element-f9093cf .elementor-heading-title span{
     font-size: 27px;
     line-height: 30px;
+    color: #fff !important;
 }
 .elementor-457 .elementor-element.elementor-element-967af47 {
     margin-top: 0px;

@@ -1381,7 +1381,23 @@
         height: 400px !important;
         object-fit: cover;
       }
-     
+     @media(max-width: 1200px) {
+      .health-care-block {
+        grid-gap: 0px !important;
+      }
+     }
+     @media(min-width: 700px) and (max-width: 1200px) {
+      .health-care-title {
+       font-size: 35px !important;
+       line-height: 40px !important;
+      }
+      .health-care-image-1 {
+        height: 300px !important;
+        object-fit: contain;
+        margin-top: 35px;
+        
+      }
+     }
     </style>
   </head>
   <body
@@ -1705,7 +1721,7 @@
             data-element_type="section"
           >
             <div class="elementor-container elementor-column-gap-default">
-              <div class="elementor-row" style="grid-gap: 30px">
+              <div class="elementor-row health-care-block" style="grid-gap: 30px">
                 <div
                   class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-dc8c092"
                   data-id="dc8c092"
@@ -1723,7 +1739,7 @@
                       >
                         <div class="elementor-widget-container">
                           <h2
-                            class="elementor-heading-title elementor-size-default"
+                            class="elementor-heading-title elementor-size-default health-care-title"
                           >
                             Digital tech for mental healthcare
                           </h2>
@@ -1779,7 +1795,7 @@
                               width="916"
                               height="716"
                               src="/wp-content/uploads/2020/12/home_1.jpg"
-                              class="attachment-full size-full"
+                              class="attachment-full size-full health-care-image-1"
                               alt=""
                               srcset="
                                 /wp-content/uploads/2020/12/home_1.jpg         916w,
@@ -1803,7 +1819,7 @@
             data-element_type="section"
           >
             <div class="elementor-container elementor-column-gap-default">
-              <div class="elementor-row" style="grid-gap: 30px">
+              <div class="elementor-row health-care-block" style="grid-gap: 30px">
                 <div
                   class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-2e8dbfe"
                   data-id="2e8dbfe"
@@ -1860,7 +1876,7 @@
                       >
                         <div class="elementor-widget-container" >
                           <h2
-                            class="elementor-heading-title elementor-size-default"
+                            class="elementor-heading-title elementor-size-default health-care-title"
                           >
                             Solving a pressing problem
                           </h2>

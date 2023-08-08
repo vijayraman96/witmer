@@ -749,7 +749,7 @@ body .elementor-16 .elementor-element.elementor-element-0be3d98 .elementor-label
     width: 100%;
 }
 .elementor-16 .elementor-element.elementor-element-c076e79 {
-    padding: 70px 32px 130px 32px;
+    padding: 70px 32px 0px 32px;
 }
 .elementor-16 .elementor-element.elementor-element-7e7976a {
     width: 50%;
@@ -778,7 +778,7 @@ body.rtl .elementor-16 .elementor-element.elementor-element-7e7976a {
 }
 .elementor-16 .elementor-element.elementor-element-2c89cd8:not(.elementor-motion-effects-element-type-background),  .elementor-16 .elementor-element.elementor-element-2c89cd8 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
     background-image: url("/wp-content/uploads/2020/12/Home_Banner-2.jpg");
-    background-position: top right;
+    background-position: center;
     background-size: cover;
 }
 .elementor-16 .elementor-element.elementor-element-2c89cd8 {
@@ -790,8 +790,9 @@ body.rtl .elementor-16 .elementor-element.elementor-element-7e7976a {
     padding: 0px 32px 0px 32px;
 }
 .elementor-16 .elementor-element.elementor-element-12325ed .elementor-heading-title {
-    font-size: 27px;
+    font-size: 24px;
     line-height: 30px;
+    width: 80%;
 }
 .elementor-16 .elementor-element.elementor-element-12325ed > .elementor-widget-container {
     margin: -40px 0px 0px 0px;
