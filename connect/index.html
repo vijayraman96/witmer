@@ -1692,6 +1692,9 @@
                         data-settings='{"step_next_label":"Next","step_previous_label":"Previous","button_width":"100","step_type":"number_text","step_icon_shape":"circle"}'
                       >
                         <div class="elementor-widget-container">
+							<p class="success-message" style="border: 1px solid green; color: green; padding: 10px; display: none; font-size: 10px; line-height: 15px;">Thanks for sending us a message. We will contact you soon</p>
+							<p class="error-message" style="border: 1px solid red; color: red; padding: 10px; display: none; font-size: 10px; line-height: 15px;">Oops something issue occurred!!. Please try again sometime later..</p>
+							<p class="error-text" style="border: 1px solid red; color: red; padding: 10px; display: none; font-size: 10px; line-height: 15px;"></p>
                           <form
                             class="elementor-form"
                            
@@ -1719,8 +1722,8 @@
                                   id="form-field-name"
                                   class="elementor-field elementor-size-xs elementor-field-textual contact-first-name"
                                   placeholder="First Name*"
-                                  required="required"
-                                  aria-required="true"
+								  required="required"
+                                  aria-required="false"
                                 />
                               </div>
                               <div
@@ -1737,6 +1740,8 @@
                                   id="form-field-field_8c8e41e"
                                   class="elementor-field elementor-size-xs elementor-field-textual contact-last-name"
                                   placeholder="Last Name*"
+								  required="required"
+                                  aria-required="false"
                                 />
                               </div>
                               <div
@@ -1753,6 +1758,9 @@
                                   id="form-field-field_33d0cac"
                                   class="elementor-field elementor-size-xs elementor-field-textual contact-company-name"
                                   placeholder="Company Name"
+							      required="required"
+                                  aria-required="false"
+								
                                 />
                               </div>
                               <div
@@ -1769,8 +1777,9 @@
                                   id="form-field-email"
                                   class="elementor-field elementor-size-xs elementor-field-textual contact-email-address"
                                   placeholder="Email Address*"
-                                  required="required"
-                                  aria-required="true"
+								  required="required"
+                                  aria-required="false"
+								
                                 />
                               </div>
                               <div
@@ -2308,6 +2317,37 @@
       var email_address = document.querySelector('.contact-email-address')
       var textarea = document.querySelector('.contact-textarea')
       var button = document.querySelector('.contact-submit-button')
+	  const successMessage = document.querySelector('.success-message')
+	  const errorMessage = document.querySelector('.error-message')
+	  const errorText = document.querySelector('.error-text')
+	 
+	first_name.addEventListener('input', (e) => {
+		console.log(e.target.value.length)
+		if(e.target.value.length > 0) {
+			errorText.style.display = "none"
+			first_name.classList.remove('error')
+		}       
+	})
+	last_name.addEventListener('input', (e) => {
+		if(e.target.value.length > 0) {
+			errorText.style.display = "none"
+			last_name.classList.remove('error')
+		}       
+	})
+	company_name.addEventListener('input', (e) => {
+		if(e.target.value.length > 0) {
+			errorText.style.display = "none"
+			company_name.classList.remove('error')
+		}       
+	})
+	email_address.addEventListener('input', (e) => {
+		if(e.target.value.length > 0) {
+			errorText.style.display = "none"
+			email_address.classList.remove('error')
+		}       
+	})
+	
+	 
       const submitForm = (e) => {
 
 		e.preventDefault()
@@ -2316,12 +2356,25 @@
       	const company = company_name.value
       	const email = email_address.value
       	const textArea = textarea.value
-      	if (fname == "" || lname == "" || company == "" || email == "") {
+      	if (fname == "") {
       		first_name.classList.add('error')
-      		last_name.classList.add('error')
-      		company_name.classList.add('error')
-      		email_address.classList.add('error')
-      	} else {
+			  errorText.innerText = 'The First name cannot be empty'
+			  errorText.style.display = "block"
+      		
+      	} else if (lname == "") {
+			last_name.classList.add('error')
+			errorText.innerText = 'The Last name cannot be empty'
+                errorText.style.display = "block"
+	
+		} else if (company == "") {
+			company_name.classList.add('error')
+			errorText.innerText = 'The Company name cannot be empty'
+                errorText.style.display = "block"
+		} else if (email == "") {
+			email_address.classList.add('error')
+			errorText.innerText = 'The Email Address name cannot be empty'
+			errorText.style.display = "block"
+		} else {
 			first_name.classList.remove('error')
 			last_name.classList.remove('error')
 			company_name.classList.remove('error')
@@ -2333,7 +2386,7 @@
 			const data = {
 				"description": "Details about the issue1...",
 				"subject": "From Witmer.ai",
-				"email": "santhosh.k@witmer.ai",
+				"email": "vijayadaran@gmail.com",
 				"status": 2,
 				"priority": 2,
 				"cc_emails": [`${email}`],
@@ -2357,9 +2410,24 @@
 					body: JSON.stringify(data)
 				})
 				.then(response => response.json())
-				.then(data => console.log(data))
-				.catch(error => console.error('Error:', error));
+				.then(data => {
+					successMessage.style.display = "block";
+					setTimeout(() => {
+						successMessage.style.display = "none";
+					}, 2000)
+					console.log(data)
+				}
+				)
+				.catch(error => {
+					errorMessage.style.display = "block";
+					setTimeout(() => {
+						errorMessage.style.display = "none";
+					}, 2000)
+					console.error('Error:', error);
+				}
+				)
       		}
+			
 	  	}
       	button.addEventListener('click', submitForm)
     </script>
