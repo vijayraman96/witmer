@@ -1007,17 +1007,6 @@
       src="/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=3.4.4"
       id="font-awesome-4-shim-js"
     ></script>
-    <script id="ecs_ajax_load-js-extra">
-      var ecs_ajax_params = {
-        ajaxurl: "\/wp-admin\/admin-ajax.php",
-        posts:
-          '{"page":0,"pagename":"solutions","error":"","m":"","p":0,"post_parent":"","subpost":"","subpost_id":"","attachment":"","attachment_id":0,"name":"solutions","page_id":0,"second":"","minute":"","hour":"","day":0,"monthnum":0,"year":0,"w":0,"category_name":"","tag":"","cat":"","tag_id":"","author":"","author_name":"","feed":"","tb":"","paged":0,"meta_key":"","meta_value":"","preview":"","s":"","sentence":"","title":"","fields":"","menu_order":"","embed":"","category__in":[],"category__not_in":[],"category__and":[],"post__in":[],"post__not_in":[],"post_name__in":[],"tag__in":[],"tag__not_in":[],"tag__and":[],"tag_slug__in":[],"tag_slug__and":[],"post_parent__in":[],"post_parent__not_in":[],"author__in":[],"author__not_in":[],"search_columns":[],"post_type":["post","page","e-landing-page"],"ignore_sticky_posts":false,"suppress_filters":false,"cache_results":true,"update_post_term_cache":true,"update_menu_item_cache":false,"lazy_load_term_meta":true,"update_post_meta_cache":true,"posts_per_page":10,"nopaging":false,"comments_per_page":"50","no_found_rows":false,"order":"DESC"}',
-      };
-    </script>
-    <script
-      src="/wp-content/plugins/ele-custom-skin/assets/js/ecs_ajax_pagination.js?ver=3.1.2"
-      id="ecs_ajax_load-js"
-    ></script>
     <script
       src="/wp-content/plugins/ele-custom-skin/assets/js/ecs.js?ver=3.1.2"
       id="ecs-script-js"
@@ -2160,7 +2149,6 @@
             data-id="0bdccd4"
             data-element_type="section"
             data-settings='{"background_background":"classic"}'
-            style="display:none"
           >
             <div class="elementor-container elementor-column-gap-default">
               <div class="elementor-row">
@@ -2242,6 +2230,9 @@ If you want to try a product that drives business outperformance by boosting emp
                                     data-widget_type="form.default"
                                   >
                                     <div class="elementor-widget-container">
+                                      <p class="success-message" style="border: 1px solid green; color: green; padding: 10px; display: none; font-size: 10px; line-height: 15px;">Thanks for sending us a message. We will contact you soon</p>
+                                      <p class="error-message" style="border: 1px solid red; color: red; padding: 10px; display: none; font-size: 10px; line-height: 15px;">Oops something issue occurred!!. Please try again sometime later..</p>
+                                      <p class="error-text" style="border: 1px solid red; color: red; padding: 10px; display: none; font-size: 10px; line-height: 15px;"></p>
                                       <form
                                         class="elementor-form"
                                         method="post"
@@ -2285,7 +2276,7 @@ If you want to try a product that drives business outperformance by boosting emp
                                               type="text"
                                               name="form_fields[name]"
                                               id="form-field-name"
-                                              class="elementor-field elementor-size-xs elementor-field-textual"
+                                              class="elementor-field elementor-size-xs elementor-field-textual contact-first-name"
                                               placeholder="First Name*"
                                               required="required"
                                               aria-required="true"
@@ -2303,7 +2294,7 @@ If you want to try a product that drives business outperformance by boosting emp
                                               type="text"
                                               name="form_fields[field_08368c2]"
                                               id="form-field-field_08368c2"
-                                              class="elementor-field elementor-size-xs elementor-field-textual"
+                                              class="elementor-field elementor-size-xs elementor-field-textual contact-last-name"
                                               placeholder="Last Name"
                                             />
                                           </div>
@@ -2319,7 +2310,7 @@ If you want to try a product that drives business outperformance by boosting emp
                                               type="text"
                                               name="form_fields[field_3cb8455]"
                                               id="form-field-field_3cb8455"
-                                              class="elementor-field elementor-size-xs elementor-field-textual"
+                                              class="elementor-field elementor-size-xs elementor-field-textual contact-company-name"
                                               placeholder="Company Name*"
                                               required="required"
                                               aria-required="true"
@@ -2337,7 +2328,7 @@ If you want to try a product that drives business outperformance by boosting emp
                                               type="email"
                                               name="form_fields[email]"
                                               id="form-field-email"
-                                              class="elementor-field elementor-size-xs elementor-field-textual"
+                                              class="elementor-field elementor-size-xs elementor-field-textual contact-email-address"
                                               placeholder="Company Email Address*"
                                               required="required"
                                               aria-required="true"
@@ -2351,7 +2342,7 @@ If you want to try a product that drives business outperformance by boosting emp
                                               class="elementor-field-label elementor-screen-only"
                                               >Message</label
                                             ><textarea
-                                              class="elementor-field-textual elementor-field elementor-size-xs"
+                                              class="elementor-field-textual elementor-field elementor-size-xs contact-textarea"
                                               name="form_fields[message]"
                                               id="form-field-message"
                                               rows="3"
@@ -2370,7 +2361,7 @@ If you want to try a product that drives business outperformance by boosting emp
                                           >
                                             <button
                                               type="submit"
-                                              class="elementor-button elementor-size-sm"
+                                              class="elementor-button elementor-size-sm contact-submit-button"
                                             >
                                               <span>
                                                 <span
@@ -2902,7 +2893,7 @@ If you want to try a product that drives business outperformance by boosting emp
     ></script>
     <script id="elementor-pro-frontend-js-before">
       var ElementorProFrontendConfig = {
-        ajaxurl: "\/wp-admin\/admin-ajax.php",
+        ajaxurl: "",
         nonce: "3efd51d97a",
         urls: {
           assets: "\/wp-content\/plugins\/elementor-pro\/assets\/",
@@ -3075,23 +3066,132 @@ If you want to try a product that drives business outperformance by boosting emp
       src="/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js?ver=3.4.1"
       id="e-sticky-js"
     ></script>
+   
     <script>
-      /(trident|msie)/i.test(navigator.userAgent) &&
-        document.getElementById &&
-        window.addEventListener &&
-        window.addEventListener(
-          "hashchange",
-          function () {
-            var t,
-              e = location.hash.substring(1);
-            /^[A-z0-9_-]+$/.test(e) &&
-              (t = document.getElementById(e)) &&
-              (/^(?:a|select|input|button|textarea)$/i.test(t.tagName) ||
-                (t.tabIndex = -1),
-              t.focus());
-          },
-          !1
-        );
+      var first_name = document.querySelector('.contact-first-name')
+      var last_name = document.querySelector('.contact-last-name')
+      var company_name = document.querySelector('.contact-company-name')
+      var email_address = document.querySelector('.contact-email-address')
+      var textarea = document.querySelector('.contact-textarea')
+      var button = document.querySelector('.contact-submit-button')
+	  const successMessage = document.querySelector('.success-message')
+	  const errorMessage = document.querySelector('.error-message')
+	  const errorText = document.querySelector('.error-text')
+	 
+	first_name.addEventListener('input', (e) => {
+		console.log(e.target.value.length)
+		if(e.target.value.length > 0) {
+			errorText.style.display = "none"
+			first_name.classList.remove('error')
+		}       
+	})
+	last_name.addEventListener('input', (e) => {
+		if(e.target.value.length > 0) {
+			errorText.style.display = "none"
+			last_name.classList.remove('error')
+		}       
+	})
+	company_name.addEventListener('input', (e) => {
+		if(e.target.value.length > 0) {
+			errorText.style.display = "none"
+			company_name.classList.remove('error')
+		}       
+	})
+	email_address.addEventListener('input', (e) => {
+		if(e.target.value.length > 0) {
+			errorText.style.display = "none"
+			email_address.classList.remove('error')
+		}       
+	})
+	
+	 
+      const submitForm = (e) => {
+
+		e.preventDefault()
+      	const fname = first_name.value
+      	const lname = last_name.value
+      	const company = company_name.value
+      	const email = email_address.value
+      	const textArea = textarea.value
+      	if (fname == "") {
+      		first_name.classList.add('error')
+			  errorText.innerText = 'The First name cannot be empty'
+			  errorText.style.display = "block"
+      		
+      	} else if (lname == "") {
+			last_name.classList.add('error')
+			errorText.innerText = 'The Last name cannot be empty'
+                errorText.style.display = "block"
+	
+		} else if (company == "") {
+			company_name.classList.add('error')
+			errorText.innerText = 'The Company name cannot be empty'
+                errorText.style.display = "block"
+		} else if (email == "") {
+			email_address.classList.add('error')
+			errorText.innerText = 'The Email Address name cannot be empty'
+			errorText.style.display = "block"
+		} else {
+			first_name.classList.remove('error')
+			last_name.classList.remove('error')
+			company_name.classList.remove('error')
+			email_address.classList.remove('error')
+			console.log(first_name, last_name)
+			const url = 'https://witmerhealthtechnologies.freshdesk.com/api/v2/tickets';
+			const username = 'ByH2598MYN4vGIdOqUYi';
+			const password = 'x';
+			const data = {
+				"description": textArea,
+				"subject": "From Witmer.ai",
+				"email": "santhosh.k@witmer.ai",
+				"status": 2,
+				"priority": 2,
+				"cc_emails": [`${email}`],
+				"custom_fields": {
+					"cf_first_name": fname,
+					"cf_last_name": lname,
+					"cf_company_name": company,
+					"cf_message": textArea,
+				}
+			
+			}
+			
+			const headers = new Headers({
+				'Authorization': 'Basic ' + btoa(username + ':' + password),
+				'Content-Type': 'application/json'
+			});
+			
+			fetch(url, {
+					method: 'POST',
+					headers: headers,
+					body: JSON.stringify(data)
+				})
+				.then(response => response.json())
+				.then(data => {
+					successMessage.style.display = "block";
+					setTimeout(() => {
+						successMessage.style.display = "none";
+					}, 3000)
+					console.log(data)
+        first_name.value = ""
+      	last_name.value = ""
+      	company_name.value = ""
+      	email_address.value = ""
+      	textarea.value = ""
+				}
+				)
+				.catch(error => {
+					errorMessage.style.display = "block";
+					setTimeout(() => {
+						errorMessage.style.display = "none";
+					}, 2000)
+					console.error('Error:', error);
+				}
+				)
+      		}
+			
+	  	}
+      	button.addEventListener('click', submitForm)
     </script>
   </body>
 </html>
